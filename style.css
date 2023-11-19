@@ -35,8 +35,8 @@ body {
 /*zodiac*/
 .zodiac img
 {
-    width:400px;
-    height: 400px;
+    width:200px;
+    height: 200px;
     position: absolute;
     transform: scale(0.2);
     z-index: 1;
