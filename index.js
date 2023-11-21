@@ -3,10 +3,13 @@ const nightback = document.querySelector('.night');
 const zodiaclogo = document.querySelector('.zodiac');
 const images = document.querySelector('.carousel');
 const returnbtn = document.querySelector('.backbtn');
+const heart = document.querySelector('.container');
+
 button.addEventListener('click', function(){
     nightback.style.display = 'none';
     zodiaclogo.style.display = 'none';
     button.style.display = 'none';
+    heart.style.display = 'block';
     images.style.display = 'block';
 })
 returnbtn.addEventListener('click',function()
@@ -15,7 +18,7 @@ returnbtn.addEventListener('click',function()
     zodiaclogo.style.display = 'block';
     button.style.display = 'block';
     images.style.display = 'none';
-    resetReachedEnd(); // Thêm reset khi chuyển về trạng thái ban đầu
+    heart.style.display = 'none';
 })
 
 let progress = 0;
