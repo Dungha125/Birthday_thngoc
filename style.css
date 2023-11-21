@@ -1347,14 +1347,17 @@ audio {
     bottom: 10px;
     left: 300px;
     -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
   }
   .heart {
     position: absolute;
+  
     &:nth-child(1) svg {
       opacity: 0;
       -webkit-animation: heartUp 1.4s infinite ease-in;
       animation: heartUp 1.4s infinite ease-in;
     }
+  
     &:nth-child(2) svg {
       position: absolute;
       left: 1rem;
@@ -1362,6 +1365,7 @@ audio {
       -webkit-animation: heartUp 1.4s 0.3s infinite ease-in;
       animation: heartUp 1.4s 0.3s infinite ease-in;
     }
+  
     &:nth-child(3) svg {
       position: absolute;
       left: 0.5rem;
@@ -1401,11 +1405,9 @@ audio {
     }
   }
   
-  
   @keyframes heartUp {
     0% {
       opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0) rotate(10deg);
       transform: translate3d(0, 0, 0) rotate(10deg);
     }
   
@@ -1419,7 +1421,6 @@ audio {
   
     90% {
       opacity: 0;
-      -webkit-transform: translate3d(0, -35vh, 0) scale(1.2) rotate(-10deg);
       transform: translate3d(0, -35vh, 0) scale(1.2) rotate(-10deg);
     }
   
