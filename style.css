@@ -54,6 +54,7 @@ body {
     }
     50%{
         opacity: 40%;
+        transform: translateX(-50%);
     }
     100%{
         opacity: 100;
@@ -65,8 +66,19 @@ body {
   position: absolute;
   width: 100px;
   height: 50px;
-  top: 0;
-  left: 0;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  background-color: #b854a2;
+  border: none;
+  color: #f0f0f0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.backbtn:hover{
+  box-shadow: 0px 0px 20px 2px #ffa7f6;
+  color: #aa159b;
+  background-color: #f291ff;
 }
 
 /*music*/
@@ -1077,7 +1089,27 @@ audio {
     
 }
 
-
+.backbtncarol
+{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 10px;
+  border-radius: 10px;
+  background-color: #b854a2;
+  border: none;
+  color: #f0f0f0;
+  font-size: 15px;
+  font-weight: 600;
+  z-index: 1;
+  display: none;
+}
+.backbtncarol:hover
+{
+  box-shadow: 0px 0px 20px 2px #ffa7f6;
+  color: #aa159b;
+  background-color: #f291ff;
+}
 
 .carousel {
     position: relative;
@@ -1086,7 +1118,7 @@ audio {
     display: none;
     pointer-events: none;
   }
-  
+
   .carousel-item {
     --items: 10;
     --width: clamp(150px, 30vw, 300px);
