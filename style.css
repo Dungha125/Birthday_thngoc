@@ -1310,7 +1310,7 @@ audio {
     bottom: 0;
     left: 0;
     display: none;
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
   }
 
   .container-1 {
@@ -1328,7 +1328,7 @@ audio {
     position: absolute;
     bottom: 10px;
     left: 100px;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
   }
   .container-3 {
     margin: auto;
@@ -1337,7 +1337,7 @@ audio {
     position: absolute;
     bottom: 0px;
     left: 200px;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
   }
   .container-4 {
     margin: auto;
@@ -1346,7 +1346,7 @@ audio {
     position: absolute;
     bottom: 10px;
     left: 300px;
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
   }
   .heart {
     position: absolute;
