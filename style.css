@@ -1308,9 +1308,17 @@ audio {
     height: fit-content;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 10px;
     display: none;
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(1.5);
+  }
+  @media (max-width: 760px)
+  {
+    .container
+    {
+
+      -webkit-transform: scale(0.7);
+    }
   }
 
   .container-1 {
